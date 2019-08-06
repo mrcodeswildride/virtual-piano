@@ -1,0 +1,78 @@
+body {
+    background-color: beige;
+    user-select: none;
+}
+
+#keyboard {
+    position: relative;
+    font-size: 0px;
+}
+
+.whiteKey {
+    display: inline-block;
+    width: 98px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.blackKey {
+    position: absolute;
+    top: 0px;
+    width: 48px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.whiteKey.selected,
+.blackKey.selected {
+    background-color: lightblue;
+}
+
+#cSharp {
+    left: 75px;
+}
+
+#dSharp {
+    left: 175px;
+}
+
+#fSharp {
+    left: 375px;
+}
+
+#gSharp {
+    left: 475px;
+}
+
+#aSharp {
+    left: 575px;
+}
+
+#notes {
+    display: inline-block;
+    vertical-align: middle;
+    width: 598px;
+    height: 75px;
+    background-color: white;
+    border: 1px solid black;
+    word-spacing: 10px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+
+#buttons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#playNotes,
+#twinkle {
+    display: block;
+    width: 100%;
+}
+
+#playNotes {
+    margin-bottom: 10px;
+}
