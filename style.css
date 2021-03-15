@@ -7,12 +7,15 @@ body {
   position: relative;
 }
 
+.key {
+  border: 1px solid black;
+}
+
 .white {
   display: inline-block;
   width: 98px;
   height: 300px;
   background-color: white;
-  border: 1px solid black;
 }
 
 .black {
@@ -21,11 +24,6 @@ body {
   width: 48px;
   height: 200px;
   background-color: black;
-  border: 1px solid black;
-}
-
-.selected {
-  background-color: lightblue;
 }
 
 #cSharp {

@@ -1,4 +1,4 @@
-let keys = document.querySelectorAll(`.white, .black`)
+let keys = document.getElementsByClassName(`key`)
 let notesParagraph = document.getElementById(`notesParagraph`)
 let playButton = document.getElementById(`playButton`)
 let twinkleButton = document.getElementById(`twinkleButton`)
@@ -28,19 +28,10 @@ function playNote(keyId) {
 
   keyIds.push(keyId)
   notesParagraph.innerHTML = keyIds.join(` `).replace(/Sharp/g, `#`)
-
-  if (key != null) {
-    key.classList.add(`selected`)
-    setTimeout(clearSelected, 250, key)
-  }
-}
-
-function clearSelected(key) {
-  key.classList.remove(`selected`)
 }
 
 function play() {
-  let keyIdsToPlay = [...keyIds]
+  let keyIdsToPlay = keyIds.slice()
 
   keyIds = []
   notesParagraph.innerHTML = ``
