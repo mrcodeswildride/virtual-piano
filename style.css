@@ -9,6 +9,8 @@ body {
 
 .key {
   border: 1px solid black;
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
 .white {
